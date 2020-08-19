@@ -5,7 +5,7 @@ function __fd2_fdg_tag -a ver msg -d "release, without use of latest-release.txt
   end
 
   echo  "tag [format like '1.2.3']: "
-  set tag (read)
+  read -c '0.1.0' tag
   if test -z $tag
     error "Can't proceed without a tag! Aborting" >&2
     return 1
