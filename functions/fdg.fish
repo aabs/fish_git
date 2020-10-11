@@ -34,14 +34,14 @@ function fdg -d 'fishdots plugin for doing useful things with git'
 end
 
 function fdg_help
-  echo "usage: fdg <cmd> [-t <title>] [-g <tags>]"
+  echo "usage: fdg <cmd> [-m '<message>'] [-g <tags>]"
   echo
   echo "fishdots plugin for doing useful things with git:"
   echo
   echo "   ed       find a file in the current repo and edit"
   echo "   release  (<ver> <msg>) Update release version, tag and push"
   echo "   save     (-m msg) save all edits"
-  echo "   sync     save all edits then push to origin"
+  echo "   sync     (-m msg) save all edits then push to origin"
   echo "   tag      (<ver> <msg>) release, without use of latest-release.txt file"
 
 end
